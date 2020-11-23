@@ -1,0 +1,106 @@
+.navigation__wrap {
+	width: 100%;
+	max-width: 1440px;
+	height: 100px;
+	background: #171b1d;
+	display: flex;
+}
+.conteiner {
+	width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.navigation__content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+.navigation__items_social {
+	width: 130px;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+}
+.navigation__item_social {
+	width: 30px;
+	height: 30px;
+}
+.navigation__item_social a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.navigation__whatsapp{
+	background: url(../images/whatsapp-brands-red.svg) no-repeat center center;
+	background-size: 25px;
+	transform: rotateY(180deg);
+}
+.navigation__telegram {
+	background: url(../images/telegram-plane-brands-red.svg) no-repeat center center;
+	background-size: 25px;
+	transform: rotateY(180deg);
+}
+.navigation__phone {
+	background: url(../images/phone-solid-red.svg) no-repeat center center;
+	background-size: 25px;
+	transform: rotateY(180deg)
+}
+.navigation__callback {
+	width: 145px;
+	height: 50px;
+	background: #e50914;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+}
+.navigation__callback a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+} 
+
+@media (max-width: 1200px) {
+	/*.conteiner {
+		width: 960px;
+	}*/
+}
+@media (max-width: 992px) {
+	/*.conteiner {
+		width: 720px;
+	}*/
+	.navigation__callback {
+		height: 35px;
+	}
+}
+@media (max-width: 768px) {
+	/*.conteiner {
+		width: 540px;
+	}*/
+}
+@media (max-width: 576px) {
+	/*.conteiner {
+		width: 80%;
+	}*/
+	.navigation__content {
+		justify-content: center;
+	}
+	.navigation__logo, 
+	.navigation__callback {
+		display: none;
+	}
+	.navigation__content_item {
+    	width: 100%;
+	}
+	.navigation__items_social {
+		width: 100%;
+		justify-content: space-evenly;
+	}
+}

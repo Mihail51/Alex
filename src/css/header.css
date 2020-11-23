@@ -1,0 +1,241 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.header {
+	width: 100%;
+	max-width: 1440px;
+	height: 57.86vw;
+	max-height: 810px;
+	min-height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/header-image@1x.webp) no-repeat center center #171b1d;
+	background-size: cover;
+	border: .1px solid transparent;
+}
+.header__content {
+	width: 750px;
+	height: 250px;
+	margin: 220px auto 0;
+	text-align: center;
+}
+.header__subject[dir="rtl"] {
+	font-family: 'Roboto', sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	letter-spacing: 0.495px;
+	color: #fff;
+}
+.header__subtitle {
+	width: 560px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	letter-spacing: 0.496px;
+	color: #fff;
+}
+.header__buttons {
+	width: 600px;
+	font-size: 0;
+	margin: 70px auto;
+	padding: 0;
+}
+.header__buttons ul {
+	width: 100%;
+	padding: 0;
+}
+.header__buttons li {
+	display: inline-block;
+	width: 199px;
+	height: 45px;
+	border: 1px solid #32393c;
+}
+.header__buttons a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.header__buttons_whatsapp, 
+.header__buttons_telegram, 
+.header__buttons_phone-number {
+	border-right: none!important;
+}
+.header__buttons_whatsapp {
+	background: url(../images/whatsapp-brands-white.svg) no-repeat center center #1d2224;
+	background-size: 30px;
+	transform: rotateY(180deg)
+}
+.header__buttons_telegram {
+	background: url(../images/telegram-plane-brands-white.svg) no-repeat center center #1d2224;
+	background-size: 30px;
+	transform: rotateY(180deg)
+}
+.header__buttons_phone-number {
+	background: url(../images/phone-solid-white.svg) no-repeat center center #1d2224;
+	background-size: 30px;
+	transform: rotateY(180deg)
+}
+.header__buttons_callback {
+	width: 600px;
+	height: 45px;
+	font-size: initial !important;
+}
+.header__buttons_callback form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+input[type="text"] {
+	width: 400px;
+	background: rgba(255, 255, 255, .5);
+	box-sizing: border-box;
+}
+input[type="text"]::placeholder {
+	direction: rtl;
+	text-align: right;
+}
+input[type="submit"] {
+	width: 200px;
+	background: #e50914;
+}
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+	.header__content {
+		height: 200px;
+		margin-top: 150px;
+	}
+}
+
+@media (max-width: 992px) {
+	.header__content {
+		width: 720px;
+		height: 180px;
+		margin-top: 120px;
+	}
+	.header__subject {
+		font-size: 40px!important;
+		line-height: 40px;
+	}
+	.header__subtitle {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.header__buttons {
+		width: 510px;
+		margin: 50px auto;
+	}
+	.header__buttons_callback {
+		width: 510px;
+		height: 40px;
+	}
+	.header__buttons li {
+		width: 169px;
+		height: 40px;
+	}
+	.header__buttons_whatsapp, 
+	.header__buttons_telegram, 
+	.header__buttons_phone-number {
+		background-size: 25px;
+	}
+	input[type="text"] {
+		width: calc(100% - 169px);
+	}
+	input[type="submit"] {
+		width: 169px;
+	}
+}
+@media (max-width: 768px) {
+	.header__content {
+		width: 540px;
+	}
+	.header__subject {
+		font-size: 35px!important;
+		line-height: 30px;
+	}
+	.header__subtitle {
+		width: 460px;
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.header__buttons {
+		width: 450px;
+		margin: 30px auto;
+	}
+	.header__buttons_callback {
+		width: 100%;
+		height: 35px;
+	}
+	.header__buttons li {
+		width: 149px;
+		height: 35px;
+	}
+	.header__buttons_whatsapp, 
+	.header__buttons_telegram, 
+	.header__buttons_phone-number {
+		background-size: 20px;
+	}
+	input[type="text"] {
+		width: calc(99.5% - 149px);
+	}
+	input[type="submit"] {
+		width: 149px;
+	}
+}
+@media (max-width: 576px) {
+	.header {
+		min-height: 100vh;
+	}
+	.header__content {
+		width: 90%;
+	}
+	.header__subject {
+		font-size: 20px!important;
+		line-height: 20px;
+	}
+	.header__subtitle {
+		width: 90%;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.header__buttons {
+		width: 100%;
+	}
+	.header__buttons_callback {
+		width: 100%;
+		height: auto;
+	}
+	.header__buttons_callback form {
+		justify-content: center;
+	}
+	.header__buttons li {
+		width: calc(98%/3);
+	}
+	input[type="text"] {
+		width: calc(98%/3*2);
+		height: 35px;
+		box-sizing: border-box;
+	}
+	input[type="submit"] {
+		width: calc(100%/3);
+		height: 35px;
+	}
+	input[type="text"]::placeholder {
+		font-size: 12px;
+	}
+}
+@media (max-width: 418px) {
+	input[type="text"], 
+	input[type="submit"] {
+		width: 98%;
+	} 
+}
