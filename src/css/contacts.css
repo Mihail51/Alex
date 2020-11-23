@@ -114,7 +114,7 @@
 	.contacts__buttons {
 		width: 90%;
 	}
-	.contacts__telegram {
+	.contacts__telegram, .contacts__whatsapp, .contacts__phone {
 		margin-right: 50px;
 	}
 }
