@@ -244,10 +244,14 @@ input[type="submit"]:hover {
 @media (max-width: 418px) {
 	input[type="text"] {
 		width: 98%;
+		height: 50px;
 		margin-bottom: 10px;
 	}
 	input[type="submit"], 
 	 .header__buttons li {
 	 	width: 60%;
+	 }
+	 input[type="submit"] {
+	 	height: 50px;
 	 }
 }
