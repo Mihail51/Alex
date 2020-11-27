@@ -18,10 +18,14 @@
 	max-width: 1440px;
 	min-height: 810px;
 	height: auto;
-	background: url(../images/features.png) no-repeat center center #171b1d;
+	background: url(../images/features.webp) no-repeat center center #171b1d;
 	background-size: 288px 610px;
 	padding: 100px 0;
 	box-sizing: border-box
+}
+.no-webp .features__wrap {
+	background: url(../images/features.png) no-repeat center center #171b1d;
+	background-size: 288px 610px;
 }
 .features__content {
 	width: 100%;
