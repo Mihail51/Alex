@@ -49,8 +49,30 @@
 	padding-right: 100px;
 	padding-left: 55px;
 	box-sizing: border-box;
-	background: url(../images/feature-image.png) no-repeat 90% center #1d2224;
-
+}
+.feature__content_item_1 {
+	background: url(../images/money.svg) no-repeat 90% center #1d2224;
+	background-size: 40px;
+}
+.feature__content_item_2 {
+	background: url(../images/bodybuilding.svg) no-repeat 90% center #1d2224;
+	background-size: 40px;
+}
+.feature__content_item_3 {
+	background: url(../images/blackjack.svg) no-repeat 90% center #1d2224;
+	background-size: 40px;
+}
+.feature__content_item_4 {
+	background: url(../images/poker-machine.svg) no-repeat 90% center #1d2224;
+	background-size: 40px;
+}
+.feature__content_item_5 {
+	background: url(../images/addresses.svg) no-repeat 90% center #1d2224;
+	background-size: 40px;
+}
+.feature__content_item_6 {
+	background: url(../images/bank.svg) no-repeat 90% center #1d2224;
+	background-size: 40px;
 }
 .feature__content_item h3 {
 	font-family: 'Roboto', sans-serif;
