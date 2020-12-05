@@ -3,6 +3,10 @@
 	top: 0;
 	background: rgba(23,27,29,.1)!important;
 }
+.result {
+	font-size: initial;
+	color: #fff;
+}
 
 
 @media (max-width: 1200px) {
